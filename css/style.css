@@ -1,0 +1,544 @@
+/* MEU CSS */
+
+
+/*------------------------------*/
+/*         MODIFICAÇÕES         */
+/*------------------------------*/
+/*  
+/*  01- ESTILOS BÁSICOS GERAIS  */
+/*  02- HEADER E NAVIGATION     */
+/*  03- BANNER                  */
+/*  04- SEÇÃO SOBRE             */
+/*  05- SEÇÃO SKILLS            */
+/*  06- SEÇÃO WORKS             */
+/*  07- SEÇÃO CONTATOS          */
+/*------------------------------*/
+
+/*      GOOGLE FONTS API's      */
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900';
+
+/*------------------------------*/
+/*  01- ESTILOS BÁSICOS GERAIS  */
+/*------------------------------*/
+
+body {
+    font-family: 'Lato', sans-serif;
+	font-size: 13px;
+    line-height: 21px;
+	font-weight: 300;
+	color: #000;
+}
+strong, b {
+	font-weight: 600;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #000;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+a, a:visited {
+    background-color: transparent;
+}
+
+i {
+	font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	margin: 0;
+	color: #000;
+}
+
+h1 {
+    font-size: 24px;
+	line-height: 30px;
+}
+
+h2 {
+    font-size: 22px;
+	line-height: 28px;
+}
+
+h3 {
+    font-size: 18px;
+	line-height: 24px;
+}
+
+h4 {
+    font-size: 16px;
+	line-height: 22px;
+}
+
+h5 {
+    font-size: 14px;
+	line-height: 20px;
+}
+
+h6 {
+    font-size: 12px;
+	line-height: 18px;
+}
+
+p {
+    color: #000;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    line-height: 22px;
+    margin: 0;
+}
+
+p strong {
+	font-weight: 600;
+}
+
+.accent-color-bg {
+	color: #fff;
+}
+/*------------------------------*/
+/*  02- HEADER E NAVIGATION     */
+/*------------------------------*/
+/*header{
+    width: 100%;
+    position: fixed;
+    z-index: 9999999999;
+}*/
+.navbar{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+    border-radius: 0px;
+    
+}
+
+.navbar-default{
+    padding-top: 0px;
+    background-color: #000;
+    transition: all 0.5s;
+    border-color: transparent;
+}
+ 
+.navbar li a:hover{
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+}
+
+
+/*------------------------------*/
+/*  03- BANNER                  */
+/*------------------------------*/
+.banner{
+    background-image: url(../images/banner_principal_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.banner img{
+    border-radius: 50%;
+    border-color: 4px solid #fff;
+    margin-bottom: 80px;
+}
+
+.banner h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    margin-top: 90px;
+    text-transform: uppercase;
+}
+
+.banner h1 span.yellow{
+    color: #fbf158;
+    padding-right: 20px;
+}
+
+.banner h1 span.white{
+    color: #fff;
+    padding-right: 40px
+}
+
+.banner h2 span{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+}
+
+.banner .btn-default{
+    width: 200px;
+    margin: 70px 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    background-color: transparent;
+    border-color: 1px solid #fff;
+    border-radius: 30px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.banner .btn-default:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all 0.5s;
+}
+
+/*------------------------------*/
+/*  04- SEÇÃO SOBRE             */
+/*------------------------------*/
+#sobre h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding-top: 70px;
+    margin-bottom: 70px;
+}
+
+#sobre h4{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    line-height: 50px;
+}
+#sobre p{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 50px;
+}
+
+#sobre h3 span{
+    padding: 0px 40px;
+    border-bottom: 3px solid #fbf158;
+    padding-bottom: 10px;
+}
+
+#sobre .btn-default{
+    width: 200px;
+    margin: 0px 0px 90px;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 30px;
+    color: #000;
+    transition: all 0.5s;
+}
+
+#sobre .btn-default:hover{
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s;
+}
+/*------------------------------*/
+/*  05- SEÇÃO SKILLS            */
+/*------------------------------*/
+#skills{
+    background-image: url(../images/skills_bg_07.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+#skills h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding-top: 70px;
+    margin-bottom: 130px;
+    color: #fff;
+}
+
+#skills h3 span{
+    padding: 0px 40px;
+    border-bottom: 3px solid #fbf158;
+    padding-bottom: 10px;
+}
+
+#skills h5{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.progress{
+    height: 4px;
+    background-color: transparent;
+    overflow: visible;
+    margin-bottom: 100px;
+    z-index: 2;
+}
+
+.progress-bar{
+    font-size: 11px;
+    text-align: right;
+    line-height: 5px;
+    border-radius: 4px;
+}
+.progress-bar span{
+    background-color: #fbf158;
+    padding: 8px 4px;
+    border-radius: 30px;
+    color: #000;
+}
+
+/*------------------------------*/
+/*  06- SEÇÃO WORKS             */
+/*------------------------------*/
+#work {
+    margin-bottom: 58px;
+}
+
+#work img {
+    /*opacidade*/
+    opacity:0.75;
+    -moz-opacity: 0.75;
+    filter: alpha(opacity=75);
+    -webkit-filter: opacity(0.75);
+    /*filtro P/B*/ 
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    /*qualidade*/
+    image-rendering: auto;
+    transition: all 0.5s;
+}
+
+#work img:hover {
+    opacity:1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-filter: opacity(1);
+    filter: none; /* Firefox 10+ */
+    -webkit-filter: grayscale(0%); /* Chrome 19+ & Safari 6+ */
+    image-rendering: auto;
+    transition: all 0.5s;
+ 
+}
+
+#work h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding: 70px;
+}
+
+#work h3 span{
+    border-bottom: 3px solid #fbf158;
+    padding-bottom: 10px;
+}
+#work p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#work .thumbnail{
+    padding: 0px;
+    border: none;
+}
+
+
+
+/*---------Download -----------*/
+
+.download{
+    background-image: url(../images/banner_down_09.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.download img{
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin-top: 50px;
+}
+
+.download span{
+    color: #fff;
+}
+
+.download .btn-default{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 28px;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.download .btn-default:hover{
+    background-color: #fff;
+    border-radius: 28px;
+    color: #000;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+/*------------------------------*/
+/*  07- SEÇÃO CONTATOS          */
+/*------------------------------*/
+
+#contato h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 130px;
+}
+
+#contato h3 span{
+    border-bottom: 3px solid #fbf158;
+}
+
+#contato h4{
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+#contato h5{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    line-height: 55px;
+    margin-top: 20px;
+}
+
+ul.social-list {
+   display: inline-flex;
+}
+
+ul.social-list li {
+    float: left;
+}
+
+ul.social-list li a {
+    color: #000;
+    display: inline-block;
+	transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    margin-left: 6px;
+}
+
+ul.social-list li a:hover {
+	color: #fff;
+    border-radius: 50%;
+    width: 52px;
+	height: 50px;
+    margin-left: 6px;
+    line-height: 46px;
+}
+
+ul.social-list li a.facebook:hover {
+	background-color: #507CBE;
+}
+
+ul.social-list li a.twitter:hover {
+	background-color: #63CDF1;
+}
+
+ul.social-list li a.google:hover {
+	background-color: #F16261;
+}
+
+ul.social-list li a.dribbble:hover {
+	background-color: #E46387;
+}
+
+ul.social-list li a.linkedin:hover {
+	background-color: #90CADD;
+}
+
+
+
+ul.social-list li a.tumblr:hover {
+	background-color: #4D7EA3;
+}
+
+ul.social-list li a.behance:hover {
+	background-color: #4a2fef;
+}
+
+ul.social-list li a.flickr:hover {
+	background-color: #E474AF;
+}
+
+ul.social-list li a.instagram:hover {
+	background-color: #4D4F54;
+}
+
+ul.social-list li a.vimeo:hover {
+	background-color: #87D3E0;
+}
+
+ul.social-list li a.youtube:hover {
+	background-color: #f91717;
+}
+
+ul.social-list li a.skype:hover {
+	background-color: #36C4F3
+}
+
+ul.social-list li a i {
+	font-size: 25px;
+	display: block;
+	width: 52px;
+	height: 50px;
+	line-height: 46px;
+	text-align: center;
+    border: 2px solid #feee00;
+    border-radius: 50%;
+}
+
+ul.social-list li:last-child a i {
+	border: 2px solid #feee00;
+}
+
+footer h4{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 70px;
+}
+
+footer ul.thanks{
+    font-size: 40px;
+    line-height: 86px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #feee00;
+    border-radius: 50%
+} 
+
+
